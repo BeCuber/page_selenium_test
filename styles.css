@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+}
+
+.input-box {
+    margin-top: 20px;
+}
+
+/* Estilo para el botón */
+#mostrarMensaje {
+    margin-top: 20px; /* Espacio encima del botón */
+}
+
+/* Estilo para el mensaje */
+#mensaje {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+    display: none; /* Asegura que esté oculto inicialmente */
+}
+
+/* Estilo para el div del botón */
+.input-box:last-of-type {
+    margin-bottom: 20px; /* Añade espacio debajo del último input */
+}
