@@ -67,3 +67,8 @@ body {
     cursor: pointer;
     margin-left: 10px;
 }
+
+/* Estilos para el checkbox */
+#noAcuerdo {
+    margin-right: 10px;
+}
