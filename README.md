@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="RM_images/obras_icon.png" alt="Obras en progreso | Under Construction" width="100" style="border-radius: 50%;/>
-</p>
-
 # Página de pruebas para test con selenium
 # Testing Page for selenium practice
 
