@@ -2,29 +2,22 @@
   <img src="RM_images/obras_icon.png" alt="Obras en progreso | Under Construction" width="100"/>
 </p>
 
-# Proyecto: [Nombre del Proyecto]
+# Repositorio: Pagina de pruebas para test con selenium
 
 ## Descripción / Description
 
 **Español:**
-Este repositorio contiene ejercicios prácticos y apuntes de código para mejorar mis habilidades en [tema o tecnología]. No es un proyecto final, sino una colección de ejemplos y experimentos para aprender y practicar. **El contenido está en desarrollo y puede no estar completamente optimizado o libre de errores.**
+Este repositorio contiene ejercicios prácticos y apuntes de código para mejorar mis habilidades en selenium. No es un proyecto final, sino una colección de ejemplos y experimentos para aprender y practicar. **El contenido está en desarrollo y puede no estar completamente optimizado o libre de errores.**
 
 **English:**
-This repository contains practical exercises and code notes to improve my skills in [topic or technology]. It is not a final project, but rather a collection of examples and experiments for learning and practice. **The content is under development and may not be fully optimized or error-free.**
+This repository contains practical exercises and code notes to improve my skills in selenium. It is not a final project, but rather a collection of examples and experiments for learning and practice. **The content is under development and may not be fully optimized or error-free.**
 
 ---
 
 ## Tecnologías utilizadas / Technologies Used
 
-**Español:**
-- [Lenguaje o tecnología 1]
-- [Lenguaje o tecnología 2]
-- [Lenguaje o tecnología 3]
-
-**English:**
-- [Language or technology 1]
-- [Language or technology 2]
-- [Language or technology 3]
+- HTML / CSS / JS
+- Markdown - Aún considero el Markdown 'tecnología en aprendizaje'. / I still consider Markdown as 'technology I'm learning'.
 
 ---
 
@@ -33,16 +26,18 @@ This repository contains practical exercises and code notes to improve my skills
 **Español:**
 Cada carpeta o archivo dentro de este repositorio contiene ejercicios o ejemplos relacionados con:
 
-- **Carpeta 1:** Descripción breve del contenido.
-- **Carpeta 2:** Descripción breve del contenido.
-- **Archivo X:** Código de referencia para [X funcionalidad].
+- **images:** Contiene imágenes para la página.
+- **index.html:** Estructura principal.
+- **styles.css:** Hoja de estilos para la estructura.
+- **script.js:** Scripts de control de la estructura.
 
 **English:**
 Each folder or file in this repository contains exercises or examples related to:
 
-- **Folder 1:** Brief description of the content.
-- **Folder 2:** Brief description of the content.
-- **File X:** Reference code for [X functionality].
+- **images:** It contains images for the page.
+- **index.html:** Main structure.
+- **styles.css:** Stylesheet for the structure.
+- **script.js:** Scripts to control the structure.
 
 ---
 
