@@ -21,6 +21,7 @@
         </div>
         <div class="information">
             <div class="titleinfo">Choose a Dragon</div>
+
             <div class="containerinfo dragonsheet">
 
                 <div class="card dragonsheet">
@@ -76,7 +77,7 @@
                         <div class="points dragonsheet">
                             <div class="titlepoints">PV</div>
                             <div class="titlepoints">PM</div>
-                            <div class="titlepoints">DMG</div>
+                            <div class="titlepoints">Dmg</div>
                             <div class="titlepoints">Gold</div>
                         </div>
                         <div class="valuepoints dragonsheet">
@@ -90,24 +91,45 @@
 
                 <div class="card dragonsheet">
                     
-                    <div class="cardcontent dragonsheet">
-
+                    <div class="cardcontent dragonsheet" id="equipmentsheet">
+                        <label for="items">You can purchase something:</label>
+                        <select id="items">
+                            <option value="icecream">Ice cream</option>
+                            <option value="balloon">Balloon</option>
+                            <option value="rubberchicken">Rubber chicken</option>
+                            <option value="canteen">Canteen</option>
+                            <option value="phonecharger">Phone charger</option>
+                            <option value="extinguisher">Extinguisher</option>
+                            <option value="firstaid">First-aid kit</option>
+                        </select>
                     </div>
 
-                    <div class="img">
-                        <div>Equipo</div>
+                    <div class="img" id="equipmentpurchased">
+                        <label for="equipment">Equipment</label>
+                        <textarea id="equipment"></textarea>
                     </div>
 
                 </div>
 
             </div>
+
+
             <div class="titleinfo">Test & Learn</div>
-            <div class="subtext">This page has been designed as a practice environment to experiment with Selenium, a tool for automating tests in web applications.</div>
+            <div class="subtext"><div class="checkboxcontainer">
+                <input type="checkbox" id="agree">
+                <label for="agree">I read and agree Private Policy.</label>
+            </div>
+            <div class="buttonscontainer">
+                <button id="btnclear">Clear</button>
+                <button id="btnsend">Send</button>
+            </div></div>
         </div>  
         
         <div class="quotes">
             <div class="quotetext">
                 <!--checkbox, label chexckbox, button Clear, button Save-->
+                
+                
             </div>
         </div>
             

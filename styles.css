@@ -95,6 +95,7 @@ body {
 .card.dragonsheet{
     display: flex;
     background-color: aquamarine;
+    justify-content: space-between;
 }
 
 .img {
@@ -180,4 +181,14 @@ body {
 
 #attributessheet{
     display: flex;
+}
+
+#equipmentsheet{
+    display: flex;
+    flex-direction: column;
+}
+
+#equipmentpurchased{
+    display: flex;
+    flex-direction: column;
 }

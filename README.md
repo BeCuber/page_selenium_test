@@ -6,10 +6,12 @@ Este repositorio contiene ejercicios prácticos y apuntes de código para mejora
 - Markdown - Sí, aún considero el Markdown 'tecnología en aprendizaje'.
 ## Estructura del Repositorio
 Cada carpeta o archivo dentro de este repositorio contiene ejercicios o ejemplos relacionados con:
+-  **exercises:** Otros archivos .html del sitio.
 -  **images:** Contiene imágenes para la página.
 -  **index.html:** Estructura principal.
--  **styles.css:** Hoja de estilos para la estructura.
 -  **script.js:** Scripts de control de la estructura.
+-  **styles.css:** Hoja de estilos para la estructura.
+
 ## Estado del Proyecto
 Este proyecto está en constante evolución, ya que sigo aprendiendo y mejorando mis habilidades. El código puede no estar completamente optimizado o terminado, y algunas partes pueden estar en desarrollo activo.
 ## Notas
@@ -35,6 +37,7 @@ This repository contains practical exercises and code notes to improve my skills
 - Markdown - Yeah, I still consider Markdown as 'technology I'm learning'.
 ## Repository Structure
 Each folder or file in this repository contains exercises or examples related to:
+-  **exercises:** More .html files of the site.
 -  **images:** It contains images for the page.
 -  **index.html:** Main structure.
 -  **styles.css:** Stylesheet for the structure.
