@@ -22,23 +22,84 @@
         <div class="information">
             <div class="titleinfo">Choose a Dragon</div>
             <div class="containerinfo dragonsheet">
-                <div>
-                    <div></div>
+
+                <div class="card dragonsheet">
+                    <div class="cardcontent dragonsheet">
+                        <div class="name dragonsheet">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name"/>
+                        </div>
+                        <div class="radio dragonsheet">
+                            <label>Species:</label>
+                            <input type="radio" id="purple" name="species">
+                            <label for="purple">Purple</label>
+                            <input type="radio" id="green" name="species">
+                            <label for="green">Green</label>
+                            <input type="radio" id="blue" name="species">
+                            <label for="blue">Blue</label>
+                        </div>
+                    </div>
                     <div class="img">
                         <img class="img-content" src="../images/sin_color_piel.png" alt="code">
                     </div>
                 </div>
-                <div>
-                    <div></div>
+
+                <div class="card dragonsheet">
+                    <div class="cardcontent dragonsheet" id="attributessheet">
+                        
+                        <div class="attrcard">
+                            <div class="attrtitle">CON</div>
+                            <div class="attrvalue">--</div>
+                        </div>
+                        <div class="slidercontainer">
+                            <input type="range" min="0" max="4" value="4" class="slider">
+                        </div>
+                        
+                        <div class="attrcard">
+                            <div class="attrtitle">STR</div>
+                            <div class="attrvalue">--</div>
+                        </div>
+                        <div class="slidercontainer">
+                            <input type="range" min="0" max="4" value="4" class="slider">
+                        </div>
+
+                        <div class="attrcard">
+                            <div class="attrtitle">MAG</div>
+                            <div class="attrvalue">--</div>
+                        </div>
+                        <div class="slidercontainer">
+                            <input type="range" min="0" max="4" value="4" class="slider">
+                        </div>
+
+                    </div>
                     <div class="img">
-                        <img class="img-content" src="" alt="building fence">
+                        <div class="points dragonsheet">
+                            <div class="titlepoints">PV</div>
+                            <div class="titlepoints">PM</div>
+                            <div class="titlepoints">DMG</div>
+                            <div class="titlepoints">Gold</div>
+                        </div>
+                        <div class="valuepoints dragonsheet">
+                            <div class="numberpoints">--</div>
+                            <div class="numberpoints">--</div>
+                            <div class="numberpoints">--</div>
+                            <div class="numberpoints">--</div>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <div class="img">
-                        <img class="img-content" src="" alt="code">
+
+                <div class="card dragonsheet">
+                    
+                    <div class="cardcontent dragonsheet">
+
                     </div>
+
+                    <div class="img">
+                        <div>Equipo</div>
+                    </div>
+
                 </div>
+
             </div>
             <div class="titleinfo">Test & Learn</div>
             <div class="subtext">This page has been designed as a practice environment to experiment with Selenium, a tool for automating tests in web applications.</div>

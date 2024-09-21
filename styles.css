@@ -92,6 +92,11 @@ body {
     flex-direction: column;
 }
 
+.card.dragonsheet{
+    display: flex;
+    background-color: aquamarine;
+}
+
 .img {
     display: flex;
     justify-content: center; /* Centra horizontalmente */
@@ -167,4 +172,12 @@ body {
 .footer-left a:hover,
 .footer-right a:hover {
     text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+.slider{
+    transform: rotate(270deg);
+}
+
+#attributessheet{
+    display: flex;
 }
