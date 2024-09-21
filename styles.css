@@ -85,8 +85,11 @@ body {
 
 .containerinfo {
     display: flex;
-    flex-direction: column;
     gap: 25px;
+}
+
+.containerinfo.dragonsheet{
+    flex-direction: column;
 }
 
 .img {
