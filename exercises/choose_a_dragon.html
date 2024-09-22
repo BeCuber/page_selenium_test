@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Test & Learn</title>
         <link rel="stylesheet" href="../styles.css">
+        <script src="../script.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -57,32 +58,31 @@
 
                 <div class="card dragonsheet">
                     <div class="cardcontent dragonsheet" id="attributessheet">
-                        
                         <div class="attrcard">
-                            <div class="attrtitle">CON</div>
-                            <div class="attrvalue">1</div>
+                            <div class="attrtitle" id="attrtitlecon">CON</div>
+                            <div class="attrvalue" id="attrvaluecon">1</div>
                         </div>
-                        <div class="slidercontainer">
+                        <div class="slidercontainer" id="sliderconcontainer">
                             <input type="range" min="0" max="4" value="1" class="slider" id="slidercon">
                         </div>
                         
                         <div class="attrcard">
-                            <div class="attrtitle">STR</div>
-                            <div class="attrvalue">1</div>
+                            <div class="attrtitle" id="attrtitlestr">STR</div>
+                            <div class="attrvalue" id="attrvaluestr">1</div>
                         </div>
-                        <div class="slidercontainer">
+                        <div class="slidercontainer" id="sliderstrcontainer">
                             <input type="range" min="0" max="4" value="1" class="slider" id="sliderstr">
                         </div>
-
+                    
                         <div class="attrcard">
-                            <div class="attrtitle">MAG</div>
-                            <div class="attrvalue">1</div>
+                            <div class="attrtitle" id="attrtitlemag">MAG</div>
+                            <div class="attrvalue" id="attrvaluemag">1</div>
                         </div>
-                        <div class="slidercontainer">
+                        <div class="slidercontainer" id="slidermagcontainer">
                             <input type="range" min="0" max="4" value="1" class="slider" id="slidermag">
                         </div>
-
                     </div>
+                    
                     <div class="img" id="pointscard">
                         <div class="points dragonsheet">
                             <div class="titlepoints">PV</div>
@@ -99,11 +99,12 @@
                     </div>
                 </div>
 
-                <div class="card dragonsheet">
+                <div class="card dragonsheet" id="store">
                     
                     <div class="cardcontent dragonsheet" id="equipmentsheet">
                         <label for="items">You can purchase something:</label>
-                        <select id="items">
+                        <select name="items" id="itemsforsell">
+                            <option value="" disabled selected>Choose up to three...</option>
                             <option value="icecream">Ice cream</option>
                             <option value="balloon">Balloon</option>
                             <option value="rubberchicken">Rubber chicken</option>
@@ -116,19 +117,18 @@
 
                     <div class="img" id="equipmentpurchased">
                         <label for="equipment">Equipment</label>
-                        <textarea id="equipment"></textarea>
+                        <textarea id="equipment" rows="3" col="20"></textarea>
                     </div>
 
                 </div>
 
             </div>
 
-
-            <div class="titleinfo">Test & Learn</div>
             <div class="subtext"><div class="checkboxcontainer">
                 <input type="checkbox" id="agree">
                 <label for="agree">I read and agree Private Policy.</label>
             </div>
+
             <div class="buttonscontainer">
                 <button id="btnclear">Clear</button>
                 <button id="btnsend">Send</button>
@@ -136,10 +136,8 @@
         </div>  
         
         <div class="quotes">
-            <div class="quotetext">
-                <!--checkbox, label chexckbox, button Clear, button Save-->
-                
-                
+            <div class="quotetext" id="exercisesquotes">
+                <div class="titleinfo">Test & Learn</div>                
             </div>
         </div>
             

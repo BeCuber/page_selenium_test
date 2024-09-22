@@ -94,7 +94,6 @@ body {
 
 .card.dragonsheet{
     display: flex;
-    background-color: aquamarine;
     justify-content: space-between;
     align-items: center;
 }
@@ -209,7 +208,6 @@ body {
 }
 
 .cardcontent.dragonsheet {
-    border: 2px solid black;
     flex: 1;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -256,6 +254,8 @@ body {
 
 .radiobtn.dragonsheet {
     margin-left: 60px;
+    display: flex;
+    gap: 30px;
 }
 
 /* The container */
@@ -265,7 +265,7 @@ body {
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -314,12 +314,12 @@ body {
   
   /* Style the indicator (dot/circle) */
   .labelforradiobtn .checkmark:after {
-       top: 9px;
-      left: 9px;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: white;
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
   }
 
   .attrcard {
@@ -366,4 +366,36 @@ body {
     font-weight: 300;
     align-items: flex-end;
 }
-  
+
+#equipmentsheet {
+    color: #1F2937;
+    font-size: 20px;
+    font-weight: 100;
+    display: flex;
+    gap: 20px;
+    flex: none;
+    width: 300px; /* Ajusta el valor según el tamaño deseado */
+    max-width: 100%;
+}
+
+#equipmentpurchased{
+    color: #1F2937;
+    font-size: 18px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#equipment {
+    width: 130px;
+    height: 85px;
+    padding: 10px;
+    font-size: 14px;
+    color: #1F2937;
+    resize: none;
+}
+
+#exercisesquotes{
+    align-items: center;
+}
