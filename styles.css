@@ -242,7 +242,128 @@ body {
     border: none;
     border-bottom: 2px solid #1F2937;
     color: #1F2937;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 100;
     margin-right: 20px;
 }
+
+.radio.dragonsheet {
+    color: #1F2937;
+    font-size: 22px;
+    font-weight: 100;
+    display: flex;
+}
+
+.radiobtn.dragonsheet {
+    margin-left: 60px;
+}
+
+/* The container */
+.labelforradiobtn {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .labelforradiobtn input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .labelforradiobtn:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .labelforradiobtn input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .labelforradiobtn input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .labelforradiobtn .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
+  .attrcard {
+    color: #1F2937;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap: 25px;
+    margin-left: 20px;
+  }
+
+  .attrvalue{
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .slidercontainer{
+    margin-top: 30px;
+  }
+
+#pointscard {
+    color: #1F2937;
+    font-size: 18px;
+    font-weight: 100;
+    display: flex;
+    align-self: center;
+    justify-content:space-around;
+}
+
+.points.dragonsheet{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.valuepoints.dragonsheet{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 300;
+    align-items: flex-end;
+}
+  

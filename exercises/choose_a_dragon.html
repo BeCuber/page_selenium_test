@@ -34,12 +34,20 @@
                         </div>
                         <div class="radio dragonsheet">
                             <label>Species:</label>
-                            <input type="radio" id="purple" name="species">
-                            <label for="purple">Purple</label>
-                            <input type="radio" id="green" name="species">
-                            <label for="green">Green</label>
-                            <input type="radio" id="blue" name="species">
-                            <label for="blue">Blue</label>
+                            <div class="radiobtn dragonsheet">
+                                <label class="labelforradiobtn">Purple
+                                    <input type="radio" id="purple" name="species">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="labelforradiobtn">Green
+                                    <input type="radio" id="green" name="species">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="labelforradiobtn">Blue
+                                    <input type="radio" id="blue" name="species">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
                         </div>
                     </div>
                     <div class="img">
@@ -52,30 +60,30 @@
                         
                         <div class="attrcard">
                             <div class="attrtitle">CON</div>
-                            <div class="attrvalue">--</div>
+                            <div class="attrvalue">1</div>
                         </div>
                         <div class="slidercontainer">
-                            <input type="range" min="0" max="4" value="4" class="slider">
+                            <input type="range" min="0" max="4" value="1" class="slider" id="slidercon">
                         </div>
                         
                         <div class="attrcard">
                             <div class="attrtitle">STR</div>
-                            <div class="attrvalue">--</div>
+                            <div class="attrvalue">1</div>
                         </div>
                         <div class="slidercontainer">
-                            <input type="range" min="0" max="4" value="4" class="slider">
+                            <input type="range" min="0" max="4" value="1" class="slider" id="sliderstr">
                         </div>
 
                         <div class="attrcard">
                             <div class="attrtitle">MAG</div>
-                            <div class="attrvalue">--</div>
+                            <div class="attrvalue">1</div>
                         </div>
                         <div class="slidercontainer">
-                            <input type="range" min="0" max="4" value="4" class="slider">
+                            <input type="range" min="0" max="4" value="1" class="slider" id="slidermag">
                         </div>
 
                     </div>
-                    <div class="img">
+                    <div class="img" id="pointscard">
                         <div class="points dragonsheet">
                             <div class="titlepoints">PV</div>
                             <div class="titlepoints">PM</div>
@@ -83,10 +91,10 @@
                             <div class="titlepoints">Gold</div>
                         </div>
                         <div class="valuepoints dragonsheet">
-                            <div class="numberpoints">--</div>
-                            <div class="numberpoints">--</div>
-                            <div class="numberpoints">--</div>
-                            <div class="numberpoints">--</div>
+                            <div class="numberpoints">10</div>
+                            <div class="numberpoints">10</div>
+                            <div class="numberpoints">10</div>
+                            <div class="numberpoints">100</div>
                         </div>
                     </div>
                 </div>
