@@ -192,3 +192,17 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+#homeicon {
+    max-width: 30px;
+    height: auto;
+}
+
+#homebtn {
+    flex:none;
+    padding: 15px;
+}
+
+#homemenu {
+    justify-content: center;
+}
