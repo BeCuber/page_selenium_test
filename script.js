@@ -25,23 +25,27 @@ radioBlue.addEventListener("change", changeImage);
 
 //====  SLIDERS ATRIBUTOS ====//
 // Función para actualizar el valor del div al mover el slider
-function updateSliderValue(sliderId, valueId) {
+function updateSliderValue(sliderId, valueId, totalId) {
     const slider = document.getElementById(sliderId);
     const valueDiv = document.getElementById(valueId);
+    const total = document.getElementById(totalId)
     
     // Actualizar el valor inicial
     valueDiv.textContent = slider.value;
+    total.textContent = (valueDiv.textContent*10)
     
     // Escuchar cambios en el slider
     slider.addEventListener('input', function() {
         valueDiv.textContent = slider.value;
+        total.textContent = (valueDiv.textContent*10)
     });
 }
 
 // Aplicar la lógica a cada slider
-updateSliderValue('slidercon', 'attrvaluecon');
-updateSliderValue('sliderstr', 'attrvaluestr');
-updateSliderValue('slidermag', 'attrvaluemag');
+updateSliderValue('slidercon', 'attrvaluecon', 'totalpv');
+updateSliderValue('slidermag', 'attrvaluemag', 'totalpm');
+updateSliderValue('sliderstr', 'attrvaluestr', 'totaldmg');
+
 
 //===== TEXTAREA ITEMS ====//
 // Obtener los elementos necesarios
@@ -49,25 +53,30 @@ const selectItems = document.getElementById("itemsforsell");
 const equipmentTextArea = document.getElementById("equipment");
 
 // Agregar un evento para cuando cambie la selección en el select
+
+n=0;
 selectItems.addEventListener("change", function() {
+    
     // Obtener el valor seleccionado
     const selectedItem = selectItems.options[selectItems.selectedIndex];
+
+    if(n===3){
+        return;
+    }
 
     // Evitar que la opción por defecto sea seleccionada
     if (selectedItem.value === "") {
         return; // No hacer nada si se selecciona la opción por defecto
     }
-
-    // Verificar cuántos elementos hay en el textarea
-    const currentItems = equipmentTextArea.value.split("\n").filter(item => item.trim() !== "");
-    if (currentItems.length >= 3) {
-        alert("Solo puedes agregar un máximo de 3 elementos.");
-        return;
-    }
-
+    
     // Agregar el texto seleccionado al textarea si no excede el límite
     equipmentTextArea.value += selectedItem.text + "\n";
 
     // Eliminar el elemento seleccionado del select
     selectItems.remove(selectItems.selectedIndex);
+    n+=1
 });
+
+
+
+

@@ -67,6 +67,14 @@
                         </div>
                         
                         <div class="attrcard">
+                            <div class="attrtitle" id="attrtitlemag">MAG</div>
+                            <div class="attrvalue" id="attrvaluemag">1</div>
+                        </div>
+                        <div class="slidercontainer" id="slidermagcontainer">
+                            <input type="range" min="0" max="4" value="1" class="slider" id="slidermag">
+                        </div>
+
+                        <div class="attrcard">
                             <div class="attrtitle" id="attrtitlestr">STR</div>
                             <div class="attrvalue" id="attrvaluestr">1</div>
                         </div>
@@ -74,13 +82,6 @@
                             <input type="range" min="0" max="4" value="1" class="slider" id="sliderstr">
                         </div>
                     
-                        <div class="attrcard">
-                            <div class="attrtitle" id="attrtitlemag">MAG</div>
-                            <div class="attrvalue" id="attrvaluemag">1</div>
-                        </div>
-                        <div class="slidercontainer" id="slidermagcontainer">
-                            <input type="range" min="0" max="4" value="1" class="slider" id="slidermag">
-                        </div>
                     </div>
                     
                     <div class="img" id="pointscard">
@@ -91,10 +92,10 @@
                             <div class="titlepoints">Gold</div>
                         </div>
                         <div class="valuepoints dragonsheet">
-                            <div class="numberpoints">10</div>
-                            <div class="numberpoints">10</div>
-                            <div class="numberpoints">10</div>
-                            <div class="numberpoints">100</div>
+                            <div class="numberpoints" id="totalpv">10</div>
+                            <div class="numberpoints" id="totalpm">10</div>
+                            <div class="numberpoints" id="totaldmg">10</div>
+                            <div class="numberpoints" id="totalgold">100</div>
                         </div>
                     </div>
                 </div>
@@ -126,7 +127,7 @@
 
             <div class="subtext"><div class="checkboxcontainer">
                 <input type="checkbox" id="agree">
-                <label for="agree">I read and agree Private Policy.</label>
+                <label for="agree">I read and agree <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Private Policy</a>.</label>
             </div>
 
             <div class="buttonscontainer">
