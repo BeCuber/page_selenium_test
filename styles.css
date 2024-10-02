@@ -374,7 +374,7 @@ body {
     display: flex;
     gap: 20px;
     flex: none;
-    width: 300px; /* Ajusta el valor según el tamaño deseado */
+    width: 300px; 
     max-width: 100%;
 }
 
@@ -398,4 +398,29 @@ body {
 
 #exercisesquotes{
     align-items: center;
+}
+
+#payback{
+
+}
+
+#btnclear{
+    border: 2px solid #3882F6;
+    color: #1F2937;
+}
+
+#btnsend{
+    border: 2px solid #3882F6;
+    color: #1F2937;
+}
+
+.buttonscontainer{
+    display: flex;
+}
+
+
+#payback{
+    border: none;
+    cursor: pointer;
+    width: fit-content;
 }

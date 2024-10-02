@@ -23,60 +23,106 @@ radioPurple.addEventListener("change", changeImage);
 radioGreen.addEventListener("change", changeImage);
 radioBlue.addEventListener("change", changeImage);
 
-//====  SLIDERS ATRIBUTOS ====//
-// Función para actualizar el valor del div al mover el slider
-function updateSliderValue(sliderId, valueId, totalId) {
-    const slider = document.getElementById(sliderId);
-    const valueDiv = document.getElementById(valueId);
-    const total = document.getElementById(totalId)
-    
-    // Actualizar el valor inicial
-    valueDiv.textContent = slider.value;
-    total.textContent = (valueDiv.textContent*10)
-    
-    // Escuchar cambios en el slider
-    slider.addEventListener('input', function() {
-        valueDiv.textContent = slider.value;
-        total.textContent = (valueDiv.textContent*10)
-    });
-}
-
-// Aplicar la lógica a cada slider
-updateSliderValue('slidercon', 'attrvaluecon', 'totalpv');
-updateSliderValue('slidermag', 'attrvaluemag', 'totalpm');
-updateSliderValue('sliderstr', 'attrvaluestr', 'totaldmg');
-
-
 //===== TEXTAREA ITEMS ====//
 // Obtener los elementos necesarios
 const selectItems = document.getElementById("itemsforsell");
 const equipmentTextArea = document.getElementById("equipment");
+let totalpv = document.getElementById("totalpv");
+let totalpm = document.getElementById("totalpm");
+let totaldmg = document.getElementById("totaldmg");
+let totalgold = document.getElementById("totalgold");
+const paybackButton = document.getElementById("payback");  // Botón de devolución
 
-// Agregar un evento para cuando cambie la selección en el select
 
-n=0;
-selectItems.addEventListener("change", function() {
-    
-    // Obtener el valor seleccionado
+// Lista para mantener los ítems comprados en orden
+let purchasedItems = [];
+
+// Contador para limitar la selección a 3 items
+let n = 0;
+
+// Evento para manejar la compra de ítems
+selectItems.addEventListener("change", function () {
     const selectedItem = selectItems.options[selectItems.selectedIndex];
 
-    if(n===3){
-        return;
-    }
+    if (n === 3) return;
+    if (selectedItem.value === "") return;
 
-    // Evitar que la opción por defecto sea seleccionada
-    if (selectedItem.value === "") {
-        return; // No hacer nada si se selecciona la opción por defecto
-    }
-    
-    // Agregar el texto seleccionado al textarea si no excede el límite
+    // Agregar el texto seleccionado al textarea
     equipmentTextArea.value += selectedItem.text + "\n";
+    purchasedItems.push(selectedItem);  // Guardar el ítem comprado en el array
 
     // Eliminar el elemento seleccionado del select
     selectItems.remove(selectItems.selectedIndex);
-    n+=1
+
+    // Llamar a la función para actualizar los atributos
+    updateAttrbItemsPurchased(selectedItem);
+
+    n += 1;
+});
+
+// Función para actualizar los atributos basados en el ítem seleccionado
+function updateAttrbItemsPurchased(selectedItem) {
+    let currentPv = parseInt(totalpv.textContent);
+    let currentPm = parseInt(totalpm.textContent);
+    let currentDmg = parseInt(totaldmg.textContent);
+    let currentGold = parseInt(totalgold.textContent);
+
+    switch (selectedItem.value) {
+        case "icecream":
+        case "phonecharger":
+        case "firstaid":
+            totalpv.textContent = currentPv + 5;
+            break;
+        case "balloon":
+        case "canteen":
+            totalpm.textContent = currentPm + 5;
+            break;
+        case "extinguisher":
+        case "rubberchicken":
+            totaldmg.textContent = currentDmg + 5;
+            break;
+    }
+
+    // Restar 20 al total de oro por cada compra
+    totalgold.textContent = currentGold - 20;
+}
+
+// Evento para manejar la devolución del último ítem comprado
+paybackButton.addEventListener("click", function() {
+    if (n === 0 || purchasedItems.length === 0) return;  // Si no hay ítems para devolver
+
+    // Eliminar el último ítem del textarea
+    let itemsText = equipmentTextArea.value.trim().split("\n");
+    let lastItemText = itemsText.pop();  // Eliminar el último ítem
+    equipmentTextArea.value = itemsText.join("\n") + (itemsText.length > 0 ? "\n" : "");  // Actualizar textarea
+
+    // Obtener el último ítem comprado desde el array
+    const lastPurchasedItem = purchasedItems.pop();
+
+    // Agregar de nuevo el ítem al select
+    const option = document.createElement("option");
+    option.value = lastPurchasedItem.value;
+    option.text = lastPurchasedItem.text;
+    selectItems.appendChild(option);
+
+    // Actualizar los atributos: sumar 15 al oro
+    totalgold.textContent = parseInt(totalgold.textContent) + 15;
+    
+    // Reducir el contador
+    n -= 1;
+});
+
+const clearButton = document.getElementById("btnclear");
+// Evento para el botón Clear
+clearButton.addEventListener("click", function () {
+    location.reload();  // Recargar la página
 });
 
 
+/*
+btn Clear -> clear
 
+
+
+*/
 
