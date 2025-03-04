@@ -10,11 +10,11 @@ const imgElement = document.querySelector(".img-content");
 // Función para cambiar la imagen según el botón de radio seleccionado
 function changeImage() {
     if (radioPurple.checked) {
-        imgElement.src = "../images/morado.png"; // Cambia la imagen a morado
+        imgElement.src = "./images/morado.png"; // Cambia la imagen a morado
     } else if (radioGreen.checked) {
-        imgElement.src = "../images/verde.png"; // Cambia la imagen a verde
+        imgElement.src = "./images/verde.png"; // Cambia la imagen a verde
     } else if (radioBlue.checked) {
-        imgElement.src = "../images/azul.png"; // Cambia la imagen a azul
+        imgElement.src = "./images/azul.png"; // Cambia la imagen a azul
     }
 }
 

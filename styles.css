@@ -16,7 +16,6 @@ body {
 .header {
     background-color: #1F2937;
     padding: 80px 200px 1px;
-    
 }
 
 .presentation {
@@ -72,8 +71,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 36px;
-    margin-bottom: 50px;
-    gap: 40px;
+    
 }
 
 .titleinfo {
@@ -400,9 +398,7 @@ body {
     align-items: center;
 }
 
-#payback{
-
-}
+/* #payback{} */
 
 #btnclear{
     border: 2px solid #3882F6;

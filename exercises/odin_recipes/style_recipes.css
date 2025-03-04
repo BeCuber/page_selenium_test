@@ -1,0 +1,169 @@
+/*
+
+font-family: 'Caesar Dressing', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Petit Formal Script', cursive;
+
+*/
+
+/* PROPIEDADES Generales */
+   
+
+
+.odin_recipes {
+    background-color: rgb(197, 129, 109);
+    font-family: 'Lato', 'Trebuchet MS', sans-serif;
+    margin: 2% 15% 5%;
+    padding: 35px;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    text-align: center;
+}
+.title1 {
+    font-family: 'Caesar Dressing', cursive;
+    color: rgb(49, 1, 1);
+    font-size: 48px;
+}
+.title2 {
+    color: rgb(241, 221, 215);
+    font-family: 'Petit Formal Script', cursive;    
+}
+
+/*PROPIEDADES DE texto img*/
+
+.image-section p {    
+    color: rgb(117, 76, 63);
+    font-size: 12px;
+    text-align: center;
+}
+
+/*enlaces de las imágenes*/
+
+figcaption a:link, figcaption a:visited {
+    color: rgb(194, 170, 163);
+    text-decoration: none;
+}
+figcaption a:hover, figcaption a:active {
+    color: rgb(194, 170, 163);
+    text-decoration:underline;
+}
+
+/*PROPIEDADES PARA index.html*/
+
+.container {
+    background-color: beige;
+    box-shadow: 1px 1px 4px rgb(49, 1, 1);
+    margin: 20px auto;
+    width: 90%;
+    padding: 20px;
+    /*height: 430px;*/
+    /*max-height: 430px;*/
+    /*font-size: 0;*/
+}
+
+.container ul {
+    list-style-position: inside;
+    text-align: center;
+}
+
+.container ol {
+    list-style-position: inside;
+}
+
+.btn_nav {
+    text-align: center;
+}
+
+.image-section, .intro-text {
+    display: inline-block; 
+    padding-top: 25px;
+}
+
+.image-section {
+    padding-left: 20px;
+    text-align: center;
+}
+
+.index-list {
+    padding: 20px;
+    text-align: center;
+}
+
+ .index-list li {
+    margin: 20px 5px;
+ }
+
+.intro-text {
+    padding-left: 25px;
+    padding-right: 20px;
+    width: 65%;
+    font-size: 15px;
+}
+
+.intro-text p{
+    margin: 10px;
+    padding: 5px;
+    text-align: start;
+}
+
+
+/*lista*/
+
+.index-p {
+    text-align: center;
+}
+
+
+.index-list, .index-list a {
+    font-family: 'Petit Formal Script', cursive;
+    font-weight: 600;
+    list-style-type: none;
+    
+}
+
+.index-list a:link, .index-list a:visited {
+    color: rgb(117, 76, 63);
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.index-list a:hover, .index-list a:active {
+    color: rgb(117, 76, 63);
+    font-size: 28px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+
+/*PROPIEDADES recetas.html*/
+
+/*enlaces*/
+a {
+    color: rgb(117, 76, 63);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*botones*/
+
+button {
+    background-color: rgb(117, 76, 63);
+}
+
+button a, button a:hover {
+    color: rgb(194, 170, 163);
+    text-decoration: none;
+}
+
+/*imagenes recetas*/
+
+figure {
+    text-align: center;
+    font-size: small;
+}
