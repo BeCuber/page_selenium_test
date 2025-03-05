@@ -5,115 +5,114 @@
 ![Index](./images/indexhome.png)
 
 ## Description
-This repository contains a tiny collection of the first exercises proposed on [Foundations Course](https://www.theodinproject.com/paths/foundations/courses/foundations) by **[The Odin Project](https://www.theodinproject.com/)**.
+This repository contains a small collection of the first exercises from the [Foundations Course](https://www.theodinproject.com/paths/foundations/courses/foundations) by **[The Odin Project](https://www.theodinproject.com/)**.
 
-They are basic code designs on **HTML5**, **CSS3** and **JavaScript**, organized on the same website in order to work as a practice lab for a basic handling of **Selenium WebDriver**.
+These are basic code examples using **HTML5**, **CSS3** and **JavaScript**, all placed on the same website to serve as a practice lab for basic **Selenium WebDriver** usage.
 
-## Tecnologías utilizadas
+## Used Technologies
 ![Static Badge](https://img.shields.io/badge/HTML5-black?style=for-the-badge&logo=HTML5)![Static Badge](https://img.shields.io/badge/CSS3-black?style=for-the-badge&logo=CSS3)![Static Badge](https://img.shields.io/badge/JavaScript-black?style=for-the-badge&logo=JavaScript)
 
-## Objetivos
-¿Necesitas páginas de prueba para empezar a aprender a manejar tecnologías como **Selenium WebDriver**?
+## Goals
+Do you need a test page to start learning how to use **Selenium WebDriver**?
 
-Usa esta [URL](https://becuber.github.io/page_selenium_test/) para familiarizarte con un DOM básico.
+Feel free to use this [URL](https://becuber.github.io/page_selenium_test/) to get familiar with a basic DOM structure.
 
-## Estado del Proyecto
-El sitio web contiene:
-- **Home**: Página de inicio, desde donde se puede acceder a los 4 ejercicios que se describen
-- **Odin Recipes**: Ejercicio basado en la propuesta [**Project: Recipes**](https://www.theodinproject.com/lessons/foundations-recipes)
-- **Etch&Sketch**: Ejercicio basado en la propuesta [**Project: Etch-a-Sketch**](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
-- **Choose a Dragon**: Ejercicio libre que busca tener disponibles distintos widgets de formulario imitando una selección de personaje
-- **RockPaperScissors**: Ejercicio basado en la propuesta [**Project: Rock Paper Scissors**](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors)
+## Project Status
+This website contains:
+- **Home**: The main page, where you can access the 4 exercises described below. They all have a button in the header that returns to this page.
+- **Odin Recipes**: An exercise based on the [**Project: Recipes**](https://www.theodinproject.com/lessons/foundations-recipes) activity.
+- **Etch&Sketch**: An exercise based on the [**Project: Etch-a-Sketch**](https://www.theodinproject.com/lessons/foundations-etch-a-sketch) activity.
+- **Choose a Dragon**: A free excercise designed to showcase different form widgets by simulating a character selection interface.
+- **RockPaperScissors**: An exercise based on the [**Project: Rock Paper Scissors**](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors) activity.
 ### [Home](https://becuber.github.io/page_selenium_test/index.html)
-La página anima a interactuar con los elementos del sitio web.
-Contiene únicamente 4 botones que llevan a los demás ejercicios.
+This page encourages users to interact with elements on the website. 
+It contains only 4 buttons that link to the other exercises.
 
->**Idea de test:**
+>**Test idea:**
 >
->*¿Los links en los botones llevan a donde deben?*
+>*Do the buttons link to the correct pages?*
 ### [Odin Recipes](https://becuber.github.io/page_selenium_test/exercises/odin_recipes/odin_recipes.html)
-Contiene un botón que permite volver a **Home** en el encabezado de la página.
 
-Son 4 páginas, la presentación, con 3 enlaces a las recetas, y las recetas, que contienen botones de navegación entre ellas.
+It consists of 4 pages: an introduction page with 3 links to recipes, and the individual recipe pages, which contain navigation buttons.
 
->**Idea de test:**
+>**Test idea:**
 >
->*¿Es correcta la navegación entre las recetas?*
+>*Is the navigation between the recipes correct?*
 >
->*¿Aparecen los botones correctos para navegar entre ellas en orden?*
+>*Do the correct buttons appear to navigate in the right order?*
 ### [Etch&Sketch](https://becuber.github.io/page_selenium_test/exercises/etch_sketch/etch_sketch.html)
-Muestra un panel dividido en cuadrados que responden al movimiento del ratón cambiando de color a un tono más oscuro.
-Cada cuadrado responde al evento de ratón hasta 10 veces, siendo cada vez más oscuro.
-El panel izquierdo permite elegir la cantidad de cuadrados por lado que se muestran y el color.
 
->**Idea de test:**
+This page displays a panel divided into squares that change to a darker shade when hovered over with the mouse. Each square reacts up to 10 times, getting darker with each interaction. The left panel allows you to adjust the number of squares per side and select a color.
+
+>**Test idea:**
 >
->*¿Existen tantos cuadrados como el número seleccionado por el usuario?*
+>*Does the number of squares match the selected value?*
 ### [Choose a Dragon](https://becuber.github.io/page_selenium_test/exercises/choose_a_dragon/choose_a_dragon.html)
-Imita una ficha de personaje donde puedes seleccionar el color del dragón, su nombre, tres atributos (CON, MAG y STR) y comprarle algún item.
-Esta página contiene widgets tipo *radio button*, *slider*, *input-text* y *selector*.
 
-Los valores por defecto para tu dragón son:
+It simulates a character sheet where you can choose the dragon's color, name, and three attributes  (CON, MAG and STR) as well as purchase items. 
+It includes various input elements such as *radio button*, *sliders*, *text inputs* and *selectors*.
+
+The default values for your dragon are:
 
 ![default-values](./images/default_values.png)
 
-Los sliders modifican los valores por defecto de la siguiente manera:
-- **CON**: cada punto sube +10 a PV
-- **MAG**: cada punto sube +10 a PM
-- **STR**: cada punto sube +10 a Dmg
+The sliders modify default values as follows:
+- **CON**: each point adds +10 to PV
+- **MAG**: each point adds +10 to PM
+- **STR**: each point adds +10 to Dmg
 
-Entre los tres atributos definidos con sliders no se puede sumar más de **8** puntos.
+The three attributes controlled by sliders cannot exceed a total of **8** points combined.
 
-Los **items** disponibles en el *selector* cuestan **20 Gold**.
-Cada item sube **+5** a uno de los tres atributos finales (**PV**, **PM** o **Dmg**)
-Pueden elegirse **hasta 3 items** que se verán reflejados en **Equipment**.
+**Items** available in the selector cost **20 Gold** each.
+Each item increases one of the three final attributes (**PV**, **PM** or **Dmg**) by **+5** .
+**Up to 3 items** can be selected and will be displayed in the **Equipment** section.
 
-Los items pueden devolverse con este botón:
+Items can be returned using this button:
 
-![pay-back](./images/pay_back.png)
+![pay-back](./exercises/choose_a_dragon/images/rewind.svg)
 
-Se devolverá **el último item adquirido** y se recuperarán **15 Gold**.
+The **last purchased item** will be removed and **15 Gold** will be refunded.
 
-Con el botón **Clear** se recuperan todos los valores por defecto en la ficha.
+Pressing the **Clear** button resets all values to their defaults.
 
->**Idea de test:**
+>**Test idea:**
 >
->*¿Es '8' la puntuación máxima que permiten los sliders?*
+>*Is '8' the maximum total allowed for the sliders?*
 >
->*¿Cada punto asignado a un slider refleja el valor correcto (+10) en el atributo final que le corresponde?*
+>*Does each assigned point correctly increase the corresponding attribute by +10?*
 >
->*¿Los items seleccionados aparecen correctamente en el campo 'Equipment'?*
+>*Do selected items appear correctly in the 'Equipment' section?*
 >
->*¿Los items seleccionados son un máximo de '3' y suman '+5' uno de los atributos finales?*
+>*Is the selection limited to 3 items, and do they increase an attribute by +5?*
 >
->*¿Los items se devuelven correctamente (desaparece de 'Equipment', se suma +15 a Gold y se resta -5 al atributo que se había sumado)?*
+>*Can items be correctly removed (disappearing from 'Equipment', refunding 15 Gold, and reducing the attribute by 5)?*
 >
->*¿Al interactuar con 'Clear' se resetean todos los valores?*
+>*Does pressing 'Clear' reset all values?*
 ### [RockPaperScissors](https://becuber.github.io/page_selenium_test/exercises/rock_paper_scissors/rock_paper_scissors.html)
-Tiene tres botones, uno por cada **arma**.
-El que elija el usuario aparecerá en el cuadro **Player** y al mismo tiempo aparecerá otro arma en el cuadro **Computer** que se elegirá de forma aleatoria.
-El programa sumará **+1 punto** (a Player o Computer) al que gane según las reglas tradicionales.
-Si existe empate, no sumará nada.
-El primero que llegue a **5 puntos** se declarará vencedor.
-Se resetean los puntos únicamente cuando se terminar una partida y se selecciona cualquier nueva arma.
 
->**Idea de test:**
+It contains three buttons, one for each **weapon**.
+The selected weapon appears in the **Player** box while a randomly chosen weapon appears in the **Computer** box at same time.
+The programm awards **+1 point** to the winner according to traditional rules.
+If there is a tie, no points are awarded.
+The first player to reach **5 points** wins.
+Points reset only when a game ends and a new weapon is selected.
+
+>**Test idea:**
 >
->*¿Se suman correctamente los puntos?*
+>*Are points awarded correctly?*
 >
->*¿Se declara al ganador correctamente?*
+>*Is the winner correctly determined?*
 >
->*¿Están apareciendo las tres opciones con una probabilidad similar para 'Computer'?*
+>*Do all three weapons appear with a similar probability for the 'Computer'?*
 
-## Mejoras previstas
-- Se pretende orientar el sitio Web para que la interacción con **Selenium WebDriver** y la propuesta de casos de prueba sean guiados.
-- Para **Choose a Dragon** se quiere utilizar el botón **Send** para iniciar una miniaventura.
-- Se pretende añadir **más tipos de widget** y alguna estructura de **tabla** para poder interactuar desde **Selenium WebDriver**.
+## Planned Improvements
+- The website will be improved to provide guided interaction with **Selenium WebDriver** and suggested test cases.
+- In **Choose a Dragon**, the **Send** button will be used to start a short adventure.
+- **More types of widgets** and a **table** structure will be added for interaction with **Selenium WebDriver**.
 
-
-## Notas
--  **Uso personal:** El código aquí compartido es principalmente para aprendizaje y experimentación.
--  **No apto para producción:** Este repositorio no está destinado a ser utilizado en un entorno de producción ni para otros proyectos sin previa revisión.
+## Notes
+- **Personal use:** This code is primarily for learning and experimentation.
+- **Not for Production Use:** This repository is not intended for deployment in production environments or other projects without prior review.
 
 ---
-¡Gracias por visitar este sitio Web! Estoy en un proceso continuo de aprendizaje, así que cualquier sugerencia o comentario es bienvenido.
+Thank you for visiting this website! I'm continuously learning, so any suggestions or feedback are always welcome.

@@ -19,11 +19,11 @@ Usa esta [URL](https://becuber.github.io/page_selenium_test/) para familiarizart
 
 ## Estado del Proyecto
 El sitio web contiene:
-- **Home**: Página de inicio, desde donde se puede acceder a los 4 ejercicios que se describen
-- **Odin Recipes**: Ejercicio basado en la propuesta [**Project: Recipes**](https://www.theodinproject.com/lessons/foundations-recipes)
-- **Etch&Sketch**: Ejercicio basado en la propuesta [**Project: Etch-a-Sketch**](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
-- **Choose a Dragon**: Ejercicio libre que busca tener disponibles distintos widgets de formulario imitando una selección de personaje
-- **RockPaperScissors**: Ejercicio basado en la propuesta [**Project: Rock Paper Scissors**](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors)
+- **Home**: Página de inicio, desde donde se puede acceder a los 4 ejercicios que se describen a continuación. Todos ellos tienen un botón en el encabezado que vuelve a esta página.
+- **Odin Recipes**: Ejercicio basado en la propuesta [**Project: Recipes**](https://www.theodinproject.com/lessons/foundations-recipes).
+- **Etch&Sketch**: Ejercicio basado en la propuesta [**Project: Etch-a-Sketch**](https://www.theodinproject.com/lessons/foundations-etch-a-sketch).
+- **Choose a Dragon**: Ejercicio libre que busca tener disponibles distintos widgets de formulario imitando una selección de personaje.
+- **RockPaperScissors**: Ejercicio basado en la propuesta [**Project: Rock Paper Scissors**](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors).
 ### [Home](https://becuber.github.io/page_selenium_test/index.html)
 La página anima a interactuar con los elementos del sitio web.
 Contiene únicamente 4 botones que llevan a los demás ejercicios.
@@ -32,7 +32,6 @@ Contiene únicamente 4 botones que llevan a los demás ejercicios.
 >
 >*¿Los links en los botones llevan a donde deben?*
 ### [Odin Recipes](https://becuber.github.io/page_selenium_test/exercises/odin_recipes/odin_recipes.html)
-Contiene un botón que permite volver a **Home** en el encabezado de la página.
 
 Son 4 páginas, la presentación, con 3 enlaces a las recetas, y las recetas, que contienen botones de navegación entre ellas.
 
@@ -42,6 +41,7 @@ Son 4 páginas, la presentación, con 3 enlaces a las recetas, y las recetas, qu
 >
 >*¿Aparecen los botones correctos para navegar entre ellas en orden?*
 ### [Etch&Sketch](https://becuber.github.io/page_selenium_test/exercises/etch_sketch/etch_sketch.html)
+
 Muestra un panel dividido en cuadrados que responden al movimiento del ratón cambiando de color a un tono más oscuro.
 Cada cuadrado responde al evento de ratón hasta 10 veces, siendo cada vez más oscuro.
 El panel izquierdo permite elegir la cantidad de cuadrados por lado que se muestran y el color.
@@ -50,6 +50,7 @@ El panel izquierdo permite elegir la cantidad de cuadrados por lado que se muest
 >
 >*¿Existen tantos cuadrados como el número seleccionado por el usuario?*
 ### [Choose a Dragon](https://becuber.github.io/page_selenium_test/exercises/choose_a_dragon/choose_a_dragon.html)
+
 Imita una ficha de personaje donde puedes seleccionar el color del dragón, su nombre, tres atributos (CON, MAG y STR) y comprarle algún item.
 Esta página contiene widgets tipo *radio button*, *slider*, *input-text* y *selector*.
 
@@ -70,7 +71,7 @@ Pueden elegirse **hasta 3 items** que se verán reflejados en **Equipment**.
 
 Los items pueden devolverse con este botón:
 
-![pay-back](./images/pay_back.png)
+![pay-back](./exercises/choose_a_dragon/images/rewind.svg)
 
 Se devolverá **el último item adquirido** y se recuperarán **15 Gold**.
 
@@ -90,12 +91,13 @@ Con el botón **Clear** se recuperan todos los valores por defecto en la ficha.
 >
 >*¿Al interactuar con 'Clear' se resetean todos los valores?*
 ### [RockPaperScissors](https://becuber.github.io/page_selenium_test/exercises/rock_paper_scissors/rock_paper_scissors.html)
+
 Tiene tres botones, uno por cada **arma**.
-El que elija el usuario aparecerá en el cuadro **Player** y al mismo tiempo aparecerá otro arma en el cuadro **Computer** que se elegirá de forma aleatoria.
+El que elijas aparecerá en el cuadro **Player** y al mismo tiempo aparecerá otro arma en el cuadro **Computer** que se elegirá de forma aleatoria.
 El programa sumará **+1 punto** (a Player o Computer) al que gane según las reglas tradicionales.
 Si existe empate, no sumará nada.
 El primero que llegue a **5 puntos** se declarará vencedor.
-Se resetean los puntos únicamente cuando se terminar una partida y se selecciona cualquier nueva arma.
+Se resetean los puntos únicamente cuando se termina una partida y se selecciona cualquier nueva arma.
 
 >**Idea de test:**
 >
@@ -112,8 +114,8 @@ Se resetean los puntos únicamente cuando se terminar una partida y se seleccion
 
 
 ## Notas
--  **Uso personal:** El código aquí compartido es principalmente para aprendizaje y experimentación.
--  **No apto para producción:** Este repositorio no está destinado a ser utilizado en un entorno de producción ni para otros proyectos sin previa revisión.
+- **Uso personal:** El código aquí compartido es principalmente para aprendizaje y experimentación.
+- **No apto para producción:** Este repositorio no está destinado a ser utilizado en un entorno de producción ni para otros proyectos sin previa revisión.
 
 ---
 ¡Gracias por visitar este sitio Web! Estoy en un proceso continuo de aprendizaje, así que cualquier sugerencia o comentario es bienvenido.
